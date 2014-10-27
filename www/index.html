@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <title>Kevin</title>
     <!--[if IE]>
@@ -30,13 +31,24 @@
         .transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
         .vjs-big-play-button{display:none !important;}
         .vjs-error-display, .vjs-control-bar { display:none !important; }
+
+        .container{background:black; opacity: .8; border-radius: 1em; max-width:900px; margin:4em auto; padding:.2em; }
+        .container a{
+            color:white;
+            font-size:3em;
+            font-family: Raleway, sans-serif;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body id="home">
 
-<div>
-    <div style="color:white; display:block;">Kevin</div>
+<div class="container">
+<ul>
+    <li><a href="/design-meetup">Tokyo Design Meetup 2014</a></li>
+    <li><a target="_blank" href="http://www.github.com/develpr/kevin.tokyo">github: kevin.tokyo</a></li>
+</ul>
 </div>
 
 <!-- BigVideo Dependencies -->
@@ -54,12 +66,17 @@
 //        BV.show(['http://kevin.dev/ocean.mp4'],{ambient:true});
 //    });
 var BV;
+var vids = [
+    'http://dr56ffqfpyftc.cloudfront.net/pop_5.mp4'
+];
+vids.sort(function() { return 0.5 - Math.random() });
 $(function() {
     // initialize BigVideo
     BV = new $.BigVideo();
     BV.init();
-    BV.show('/home/kevin/Desktop/ok.mp4',{ambient:true});
+    BV.show(vids[1],{ambient:true});
 });
 </script>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 </body>
 </html>

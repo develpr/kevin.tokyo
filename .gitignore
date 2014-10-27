@@ -6,3 +6,5 @@ cookbooks
 tmp/
 www/webapp/npm-debug.log
 /.project
+*.mp4
+www/npm-debug.log
