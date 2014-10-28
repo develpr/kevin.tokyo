@@ -427,3 +427,7 @@ body {
 	bottom: -32%;
 	z-index: 30;
 }
+
+.ft-section li{
+    font-size:1.2em;
+}
