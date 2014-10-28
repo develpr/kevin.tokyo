@@ -185,7 +185,7 @@ body {
 .flowtime dl dt:before {
 	content: "\2022";
 	text-align: right;
-	color: #ffdd00;
+	color: #5cb33f;
 	margin-right: 0.5rem;
 	display: inline-block;
 	position: absolute;
@@ -200,7 +200,7 @@ body {
 	content: counter(list) ".";
 	counter-increment: list;
 	font-size: 0.75em;
-	color: #ffdd00;
+	color: #5cb33f;
 	margin-right: 0.5rem;
 	display: inline-block;
 	position: relative;
